@@ -3,7 +3,7 @@ let List = require('../models/list');
 
 function getLists(req, res) {
  List.find({})
-  .populate({path: 'items', select: 'item score'})
+  .populate({path: 'items', select: 'item score created_at'})
   .exec((err, lists) => {
     if(err) {
       res.send(err);
