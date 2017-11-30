@@ -1,0 +1,27 @@
+{
+  "name": "listed",
+  "version": "1.0.0",
+  "description": "a list making API",
+  "main": "server.js",
+  "author": "Kristen Spencer",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "config": "^1.20.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.15",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5",
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "start": "NODE_ENV=dev && nodemon server.js",
+    "test": "mocha --timeout 1000"
+  }
+}
+
+
