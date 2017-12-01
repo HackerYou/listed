@@ -3,43 +3,9 @@ Listed API is the definitive list making API for your list making application ne
 
 This API was built for a `React & Redux` workshop. No keys / no auth, just fun and learning!
 
-<!-- ### Authorization 
-In order to make requests to the HackerYou API you need to first obtain an API key. Getting a key is easy, you need to make a POST request to `/key` and provide your email address, you will then be returned an `key` that you can use for your requests! -->
-
 ## Routes
 
 All requests need to be prefixed with `http://lists.hackeryou.com`
-
-<!-- ### Key
-#### `/key`
-**POST** or **GET** _Return or register an api key for use based on email provided_
-
-Params | Value | Description
------- | ---- | ------
-`email` : string | `your-email` | Api key to make requests
-
-**Examples:** `http://api.hackeryou.com/v1/key?email=snickers@example.com` 
-
-#### Sample Response 
-
-*New Key*
-
-	{
-	  "response": {
-	    "key": "$2a$10$ifelhq/xoaa3t0TTWsrz2eXx.6VyV26z92zuN.e68SosdHwnuyF/q",
-	    "email": "tes@tes.com",
-	  }
-	}
-	
-*Key Exists*
-
-	{
-	  "response": {
-	    "key": "$2a$10$ifelhq/xoaa3t0TTWsrz2eXx.6VyV26z92zuN.e68SosdHwnuyF/q",
-	    "email": "tes@tes.com"
-	  },
-	  "message": "Key for email already exists"
-	} -->
 
 ### Lists
 ### `/list`
@@ -103,9 +69,10 @@ Params | Value | Description
 ```
 
 <strong>POST</strong> _Post A New List_
+
 Params | Value | Description
 ------ | ------ | ------
-`title` : string | `title of list` |  Required
+`title` : string | `list title` | required
 
 **Example:** `http://lists.hackeryou.com/list/5a208081ee97e351d81e5cc5`
 
