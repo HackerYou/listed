@@ -1,15 +1,14 @@
 # Listed API 
 Listed API is the definitive list making API for your list making application needs! 
 
-# Why?
-This API was built for a `React & Redux` workshop. No keys, no auth, just for fun and learning!
+This API was built for a `React & Redux` workshop. No keys / no auth, just fun and learning!
 
 <!-- ### Authorization 
 In order to make requests to the HackerYou API you need to first obtain an API key. Getting a key is easy, you need to make a POST request to `/key` and provide your email address, you will then be returned an `key` that you can use for your requests! -->
 
 ## Routes
 
-All requests need to be prefixed with `http://lists.hackeryou.com`. 
+All requests need to be prefixed with `http://lists.hackeryou.com`
 
 <!-- ### Key
 #### `/key`
