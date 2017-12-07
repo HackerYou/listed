@@ -8,6 +8,14 @@ let list = require('./controllers/routes/list');
 let item = require('./controllers/routes/item')
 let config = require('config');
 
+app.use(function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Credentials', true);
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Content-length, Accept, x-access-token');
+  res.header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
+  next();
+});
+
 //db options
 let options = {
   server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000} },
